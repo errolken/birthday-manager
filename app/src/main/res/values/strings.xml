@@ -7,4 +7,6 @@
     <string name="password">Password</string>
     <string name="name">Name</string>
     <string name="btn_register">Register</string>
+    <string name="upcoming_birthdays">Upcoming Birthdays</string>
+    <string name="settings">settings</string>
 </resources>
