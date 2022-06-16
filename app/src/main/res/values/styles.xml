@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:background">#000000</item>
+        <item name="android:textColor">#0058BF</item>
+        <item name="android:textColorPrimary">#0058BF</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+    <style name="themetimePicker" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="showTitle">false</item>
+        <item name="android:background">#000000</item>
+        <item name="android:textColor">#0058BF</item>
+        <item name="colorControlActivated">#42DCC5</item>
+        <item name="colorAccent">#000000</item>
+        <item name="android:textColorPrimary">#0058BF</item>
+        <item name="android:textColorSecondary">#0058BF</item>
+        <item name="android:backgroundTint">#000000</item>
+    </style>
+</resources>
