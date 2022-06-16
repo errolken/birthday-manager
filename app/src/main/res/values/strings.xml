@@ -9,4 +9,23 @@
     <string name="btn_register">Register</string>
     <string name="upcoming_birthdays">Upcoming Birthdays</string>
     <string name="settings">settings</string>
+    <string name="add_birthday">Add Birthday</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="jan_01_2022">JAN 01 2022</string>
+    <string name="time">Time</string>
+    <string name="_00_00">00:00</string>
+    <string name="date">Date</string>
+    <string name="edit_birthday">Edit Birthday</string>
+    <string name="i_d_like_to_receive_sms_notifications">I’d like to receive SMS notifications</string>
+    <string name="title_activity_birthdayedit">birthdayeditActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="add">Add</string>
 </resources>
