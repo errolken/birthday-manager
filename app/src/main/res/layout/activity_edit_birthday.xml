@@ -5,7 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    tools:context=".birthdayeditActivity">
+    tools:context=".EditBirthdayActivity">
+
+    <Button
+        android:id="@+id/edit_date_picker"
+        style="?android:spinnerStyle"
+        android:layout_width="212dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="10dp"
+        android:onClick="openDatePicker"
+        android:padding="4dp"
+        android:text="01 JAN 2022"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33" />
 
     <TextView
         android:id="@+id/textView8"
@@ -14,6 +32,7 @@
         android:text="@string/name"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.125"
@@ -22,20 +41,22 @@
         app:layout_constraintVertical_bias="0.238" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/edit_name"
         android:layout_width="210dp"
-        android:layout_height="31dp"
+        android:layout_height="28dp"
         android:background="#636363"
         android:ems="10"
+        android:hint="Enter your friend's name"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
+        android:padding="4dp"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintHorizontal_bias="0.582"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.229"
-        android:importantForAutofill="no" />
+        app:layout_constraintVertical_bias="0.237" />
 
     <TextView
         android:id="@+id/textView12"
@@ -44,101 +65,79 @@
         android:text="@string/date"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.121"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.36" />
+        app:layout_constraintVertical_bias="0.341" />
 
-    <Button
-        android:id="@+id/datePickerButton2"
-        style="?android:spinnerStyle"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:onClick="openDatePicker"
-        android:text="@string/jan_01_2022"
-        android:textColor="@color/white"
-        android:textSize="14sp"
+    <EditText
+        android:id="@+id/edit_bday_ideas"
+        android:layout_width="214dp"
+        android:layout_height="28dp"
+        android:background="#636363"
+        android:ems="10"
+        android:hint="Enter some gift ideas"
+        android:inputType="textPersonName"
+        android:padding="4dp"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.726"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.593"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.345" />
+        app:layout_constraintVertical_bias="0.433" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/time"
+        android:text="Gifts"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.122"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.488" />
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:buttonTint="@color/blue"
-        android:checked="true"
-        android:text="@string/i_d_like_to_receive_sms_notifications"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.229"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.604" />
+        app:layout_constraintVertical_bias="0.434" />
 
     <Button
-        android:id="@+id/timeButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#00FFFFFF"
-        android:onClick="popTimePicker"
-        android:text="@string/_00_00"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.324"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.487" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="141dp"
+        android:id="@+id/btn_edit_add_bday"
+        android:layout_width="150dp"
         android:layout_height="39dp"
-        android:background="#0058BF"
+        android:background="@drawable/primary_rounded_button"
         android:paddingLeft="30sp"
         android:paddingRight="30sp"
-        android:text="@string/add"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.837"
+        app:layout_constraintHorizontal_bias="0.846"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.957" />
+        app:layout_constraintVertical_bias="0.932" />
 
     <Button
-        android:id="@+id/button5"
-        android:layout_width="141dp"
+        android:id="@+id/btn_edit_delete_bday"
+        android:layout_width="150dp"
         android:layout_height="39dp"
-        android:background="#BD0330"
+        android:background="@drawable/secondary_rounded_button"
         android:paddingLeft="30sp"
         android:paddingRight="30sp"
         android:text="@string/delete"
+        android:textAllCaps="false"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintHorizontal_bias="0.176"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.956" />
+        app:layout_constraintVertical_bias="0.932" />
 
     <TextView
         android:id="@+id/textView14"
@@ -151,8 +150,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintHorizontal_bias="0.164"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04" />
+        app:layout_constraintVertical_bias="0.215" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
